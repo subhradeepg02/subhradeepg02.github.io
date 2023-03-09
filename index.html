@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style type="text/css">
+    div{
+        color:white;
+    }
+    h1{
+        color: 'white';
+        font-family: arial, sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 200px;
+    }
+    h2{
+        color: 'white';
+        font-family: arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 400px;
+    }
+        body{
+            background-image: url("{% static 'C:\Users\91825\OneDrive\Desktop\Diabeticpro\diabetesproo\static\DiabeticPrediction\images\42271822770_09cee734c0_k-e1581770521698-1310x815.jpg' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    input[type=submit]{
+        background-color:red;
+        border: 2px;
+        color: white;
+        padding: 16px 32px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    </style>
+</head>
+<body>
+    <div align='center'>
+        <h1>
+            WELCOME TO DIABETES PREDICTION SYSTEM
+        </h1>
+        <form action="predict">
+            <input type="submit" value="Lets start">
+        </form>
+    </div>
+
+</body>
+</html>
